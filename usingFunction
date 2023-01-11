@@ -1,0 +1,25 @@
+import java.util.*;
+public class Solution {
+    // DO NOT MODIFY THE LIST. IT IS READ ONLY
+    public static int power( int A, int B) {
+        int power=A;
+        if(B==1){
+            return A;
+        }
+        else{for(int i = 2 ; i<=B ; i++){
+            A = A * power;
+           
+
+        }
+        return A;
+        }
+    }
+    public static void main(String argrs[]){
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int ApowerB = power(A,B);
+        System.out.println(ApowerB);
+
+    }
+}
